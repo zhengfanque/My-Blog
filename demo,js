@@ -1,0 +1,34 @@
+else{
+	alert("I love you");
+}*/
+/*window.onload=function(){
+	var songs=document.getElementById('song');
+	alert(songs);
+}
+*/
+
+/*window.onload=function(){
+	var btn=document.getElementById('test1');
+	btn.addEventListener("click",function1);
+	function function1(){
+		alert(Math.random());
+		btn.removeEventListener("click",function1);
+	}
+}
+*/
+
+
+function music_control(){
+	var bgmusic=document.getElementById("bgmusic");
+	var mb=document.getElementById("mb");
+	var song=document.getElementById("song");
+	if(mb.innerHTML=="Play"){
+		bgmusic.play();
+		mb.innerHTML="Pause";
+		document.getElementById("song").id="song_change";
+	}else{
+		bgmusic.pause();
+		mb.innerHTML="Play";
+		document.getElementById("song_change").id="song";
+	}
+}
